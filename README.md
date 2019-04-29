@@ -1,4 +1,4 @@
-# docker_rails_Quickstart_template
+# rails_on_docker_Quickstart
 ### rails + Mysql の環境をdockerで作った時に他のテンプレートで作ってもうまくいかなかったので自分で作りました。後述の「前提」に該当していて「使い方」の通りに操作すればrailsでの開発が始められる。。。ハズ
 - Mac端末での動確は済
 - Windows環境での動作検証は行なっておりませんので悪しからず
