@@ -1,0 +1,1 @@
+# docker_rails_Quickstart_template
