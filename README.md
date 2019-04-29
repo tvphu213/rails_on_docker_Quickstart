@@ -13,5 +13,5 @@
 - `docker-compose build` (新規プロジェクト作成でGemfileが新しくなっているのでbuildする必要がある)
 - db/config/database.ymlの`host`のvalueを`db`へ`username`のvalueを`root`へ変更（passwordとかは任意で変更願います。）
 - `docker-compose up`
-- `docker-compose run web rake db:create` (初期起動時のみ)
+- 別のターミナルを開き`docker-compose run web rake db:create` (初期起動時のみ)
 - `http://localhost:3000`　へアクセスすればwelcomeページへ遷移する
