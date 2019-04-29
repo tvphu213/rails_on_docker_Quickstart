@@ -7,7 +7,7 @@
 - dockerがインストールされていること（されていない場合は[こちら](https://qiita.com/scrummasudar/items/750aa52f4e0e747eed68)
 
 ### 使い方
-- cloneする(https://github.com/yosuke0517/docker_rails_Quickstart_template)
+- cloneする(https://github.com/yosuke0517/rails_on_docker_Quickstart)
 - `docker-compose run web rails new . --force --no-deps --database=mysql` (新規プロジェクト作成)
 - `docker-compose build` (新規プロジェクト作成でGemfileが新しくなっているのでbuildする必要がある)
 - db/config/database.ymlの`host`のvalueを`db`へ`username`のvalueを`root`へ変更（passwordとかは任意で変更願います。）
