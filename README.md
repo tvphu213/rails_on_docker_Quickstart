@@ -8,10 +8,15 @@
 - dockerがインストールされていること（されていない場合は[こちら](https://qiita.com/scrummasudar/items/750aa52f4e0e747eed68)
 
 ### 使い方
-- cloneする(https://github.com/yosuke0517/rails_on_docker_Quickstart)
-- `docker-compose run web rails new . --force --no-deps --database=mysql` (新規プロジェクト作成)
-- `docker-compose build` (新規プロジェクト作成でGemfileが新しくなっているのでbuildする必要がある)
-- db/config/database.ymlの`host`のvalueを`db`へ`username`のvalueを`root`へ変更（passwordとかは任意で変更願います。）
-- `docker-compose up`
-- 別のターミナルを開き`docker-compose run web rake db:create` (初期起動時のみ)
-- `http://localhost:3000`　へアクセスすればwelcomeページへ遷移する
+- 1.`clone`する(https://github.com/yosuke0517/rails_on_docker_Quickstart)
+- 2.`docker-compose run web rails new . --force --no-deps --database=mysql` (新規プロジェクト作成)
+- 3.`docker-compose build` (新規プロジェクト作成でGemfileが新しくなっているのでbuildする必要がある)
+- 4.db/config/database.ymlの`host`のvalueを<font color="Crimson">db</font>へ`username`のvalueを<font color="Crimson">root</font>へ変更（passwordとかは任意で変更願います。）
+- 5.`docker-compose up`
+- 6.railsのコンテナに入ってmysql-clientをinstallする
+ - 6-1.別のターミナルを開き`docker ps`
+ - 6-2.`rails_on_docker_quickstart_web`の方の`CONTAINER ID`をコピー
+ - 6-3.`docker exec -it (CONTAINER ID) bash`でコンテナに入る
+ - 6-4.`apt-get install mysql-client`でmysql-clientをインストール(インストール後はexitでコンテナを抜ける)
+- 7.別のターミナルを開き`docker-compose run web rake db:create` (初期起動時のみ)
+- 8.`http://localhost:3000`　へアクセスすればwelcomeページへ遷移する
