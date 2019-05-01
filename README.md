@@ -8,7 +8,7 @@
 - dockerがインストールされていること（されていない場合は[こちら](https://qiita.com/scrummasudar/items/750aa52f4e0e747eed68)
 
 ### 使い方
-#### Qiitaにまとめました [こちら](https://qiita.com/sukezane/items/ad97e24c450e117f8eaf)
+#### Qiitaにまとめました [[こちら]](https://qiita.com/sukezane/items/ad97e24c450e117f8eaf)
 - 1.`clone`する(https://github.com/yosuke0517/rails_on_docker_Quickstart)
 - 2.`docker-compose run web rails new . --force --no-deps --database=mysql` (新規プロジェクト作成)
 - 3.`docker-compose build` (新規プロジェクト作成でGemfileが新しくなっているのでbuildする必要がある)
