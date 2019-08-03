@@ -14,10 +14,5 @@
 - 3.`docker-compose build` (新規プロジェクト作成でGemfileが新しくなっているのでbuildする必要がある)
 - 4.db/config/database.ymlの`host`のvalueを<font color="Crimson">db</font>へ`username`のvalueを<font color="Crimson">root</font>へ変更（passwordとかは任意で変更願います。）
 - 5.`docker-compose up`
-- 6.railsのコンテナに入ってmysql-clientをinstallする
- - 6-1.別のターミナルを開き`docker ps`
- - 6-2.`rails_on_docker_quickstart_web`の方の`CONTAINER ID`をコピー
- - 6-3.`docker exec -it (CONTAINER ID) bash`でコンテナに入る
- - 6-4.`apt-get install mysql-client`でmysql-clientをインストール(インストール後はexitでコンテナを抜ける)
-- 7.別のターミナルを開き`docker-compose run web rake db:create` (初期起動時のみ)
-- 8.`http://localhost:3000`　へアクセスすればwelcomeページへ遷移する
+- 6.別のターミナルを開き`docker-compose run web rake db:create` (初期起動時のみ)
+- 7.`http://localhost:3000`　へアクセスすればwelcomeページへ遷移する
